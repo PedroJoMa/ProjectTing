@@ -22,7 +22,7 @@ def process(path_file, instance):
 def remove(instance):
     if instance.is_empty():
         return print("Não há elementos")
-    path_file = instance.dequeue()
+    path_file = instance.dequeue()["nome_do_arquivo"]
     print(f"Arquivo {path_file} removido com sucesso")
 
 

@@ -1,4 +1,3 @@
-from ting_file_management.queue import Queue
 from ting_file_management.file_management import txt_importer
 import sys
 
@@ -27,25 +26,4 @@ def remove(instance):
 
 
 def file_metadata(instance, position):
-    class_queue = Queue()
-    fila = process(instance, class_queue)
-    try:
-        print(fila[position])
-    except IndexError:
-        return "Posição inválida"
-
-    # if instance.search(path_file) is not None:
-    #     print(f"Arquivo {path_file} já foi processado anteriormente")
-    #     return
-
-    # file_lines = txt_importer(path_file)
-    # if not file_lines:
-    #     return
-
-    # file_dict = process_file(file_lines)
-
-    # instance.enqueue(path_file)
-    # instance.enqueue(file_dict)
-
-    # print(f"Dados processados do arquivo {path_file}:")
-    # print(file_dict)
+    pass
